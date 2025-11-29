@@ -17,4 +17,4 @@ Desenvolver e implementar um software de painel interativo integrado ao processo
 
 ## MVP - Figma
 
-<a hrfe="https://share.google/aLAqXYodRnM7AZQRg">Link do Figma<a/>
+<a hrfe="https://share.google/aLAqXYodRnM7AZQRg">Link do Figma</a>
