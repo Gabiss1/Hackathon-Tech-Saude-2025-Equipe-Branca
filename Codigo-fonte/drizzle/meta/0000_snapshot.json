@@ -1,0 +1,109 @@
+{
+  "version": "5",
+  "dialect": "sqlite",
+  "id": "03ed201e-7b3b-4cac-8019-12c6b7ac871d",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "tables": {
+    "atendimento": {
+      "name": "atendimento",
+      "columns": {
+        "uuid": {
+          "name": "uuid",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": true
+        },
+        "numero_guiche": {
+          "name": "numero_guiche",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "prioridade": {
+          "name": "prioridade",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "paciente_uuid": {
+          "name": "paciente_uuid",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "atendimento_paciente_uuid_paciente_uuid_fk": {
+          "name": "atendimento_paciente_uuid_paciente_uuid_fk",
+          "tableFrom": "atendimento",
+          "tableTo": "paciente",
+          "columnsFrom": [
+            "paciente_uuid"
+          ],
+          "columnsTo": [
+            "uuid"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "paciente": {
+      "name": "paciente",
+      "columns": {
+        "uuid": {
+          "name": "uuid",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": true
+        },
+        "paciente_nome": {
+          "name": "paciente_nome",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "paciente_sobrenome": {
+          "name": "paciente_sobrenome",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "paciente_cpf": {
+          "name": "paciente_cpf",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "telefone": {
+          "name": "telefone",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}
