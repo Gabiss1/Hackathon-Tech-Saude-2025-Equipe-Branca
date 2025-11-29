@@ -14,3 +14,7 @@ Desenvolver e implementar um software de painel interativo integrado ao processo
 5. Criar uma interface amigável, intuitiva e inclusiva, garantindo que pacientes de diferentes faixas etárias e níveis de letramento compreendam facilmente as informações apresentadas;
 6. Melhorar a transparência e a comunicação entre o hospital e os pacientes ao disponibilizar dados atualizados sobre o fluxo de atendimento, reduzindo angústias e aumentando a satisfação durante o período de espera;
 7. Explorar tecnologias de mensagem automática e integração de dados, garantindo segurança, confiabilidade e estabilidade no envio das informações e na atualização do painel.
+
+## MVP - Figma
+
+<a hrfe="https://share.google/aLAqXYodRnM7AZQRg">Link do Figma<a/>
